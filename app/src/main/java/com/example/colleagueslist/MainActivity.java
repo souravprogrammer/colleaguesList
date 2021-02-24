@@ -141,7 +141,6 @@ public class MainActivity extends AppCompatActivity {
     private void delete() {
         ColleagueDataHelper helper = new ColleagueDataHelper(this);
         SQLiteDatabase db  = helper.getReadableDatabase() ;
-        Toast.makeText(this, "sup", Toast.LENGTH_SHORT).show();
 
         db.delete(ColleagueListContract.Table.NAME,null,null) ;
         homeFrag = null ;
